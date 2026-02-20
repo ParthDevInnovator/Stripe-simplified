@@ -1,16 +1,10 @@
 "use client"
-import { useQuery } from "convex/react";
-import { api } from "../../convex/_generated/api";
 
 export default function Home(){
-  const tasks=useQuery(api.tasks.getAllTasks);
   return(
     <>
-    <h1>All tasks in db</h1>
-        {tasks?.map(tasks=><div key={tasks._id}>
-           <h2>{tasks.text}</h2>
-           <p>is completed:{tasks.isCompleted}</p>
-           </div>)}
+    <h1>Hello world </h1>
+       
           </>
   )
 }
