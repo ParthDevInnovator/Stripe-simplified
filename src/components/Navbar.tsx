@@ -3,6 +3,7 @@ import { BookOpenIcon, CreditCardIcon, GraduationCap, LogOutIcon, ZapIcon } from
 import Link from "next/link";
 import { Button } from "./ui/button";
 
+
 const Navbar = () => {
 	return (
 		<nav className='flex justify-between items-center py-4 px-6 bg-background border-b'>
