@@ -19,13 +19,13 @@ export default defineSchema({
         price:v.number(),
     }),
 
-    purchase:defineTable({
-        userId:v.id("users"),
-        courseId:v.id("courses"),
-        amount:v.number(),
-        purchaseDate:v.number(),
-        stripePurchaseId:v.string(),
-    }).index("by_userId_and_courseId",["userId","courseId"]),
+purchases: defineTable({
+		userId: v.id("users"),
+		courseId: v.id("courses"),
+		amount: v.number(),
+		purchaseDate: v.number(), // unix timestamp
+		stripePurchaseId: v.string(),
+	}).index("by_userId_and_courseId", ["userId", "courseId"]),
 
 
     subscriptions:defineTable({
