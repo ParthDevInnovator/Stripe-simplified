@@ -28,7 +28,7 @@ purchases: defineTable({
 	}).index("by_userId_and_courseId", ["userId", "courseId"]),
 
 
-    subscriptions:defineTable({
+    subscription:defineTable({
         userId:v.id("users"),
         planType:v.union(v.literal("month"),v.literal("years")),
         currentPeriodStart:v.number(),
